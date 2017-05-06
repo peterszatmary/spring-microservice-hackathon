@@ -3,6 +3,7 @@ package com.szatmary.peter;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -33,7 +34,7 @@ public class UserController {
     private String superUserRole;
 
     @RequestMapping("/users")
-    public List<User> showSystemUsers() {
+    public @ResponseBody  List<User> showSystemUsers() {
         List<User> result = new ArrayList<>();
         result.add(new User(adminName, adminSurname, adminRole));
         result.add(new User(superUserName, superUserSurname, superUserRole));
