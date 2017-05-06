@@ -33,7 +33,7 @@ public class UserController {
     @Value("${superuser.role}")
     private String superUserRole;
 
-    @RequestMapping("/users")
+    @RequestMapping(value = "/users")
     public @ResponseBody  List<User> showSystemUsers() {
         List<User> result = new ArrayList<>();
         result.add(new User(adminName, adminSurname, adminRole));
