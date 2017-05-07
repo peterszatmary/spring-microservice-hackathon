@@ -27,7 +27,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <!--cloud parent-->
+    <!--cloud parent doesnt work properly with reactive stuffs-->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -39,7 +39,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
     <dependencies>
 
@@ -63,6 +62,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+            <version>2.1.1</version>
         </dependency>
 
         <dependency>
