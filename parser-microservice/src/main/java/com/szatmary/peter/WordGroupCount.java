@@ -22,7 +22,7 @@ public class WordGroupCount {
      * read words from text file (in resources) and count groups of them.
      * Just like example. Reads raw test.
      *
-     * 
+     *
      *
      * @return
      */
