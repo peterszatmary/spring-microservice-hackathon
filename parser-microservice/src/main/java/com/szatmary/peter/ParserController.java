@@ -1,11 +1,10 @@
 package com.szatmary.peter;
 
 
+import com.szatmary.peter.obj.WordCountObj;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 /**
@@ -23,8 +22,12 @@ public class ParserController {
 
     @RequestMapping(value = "/about")
     public @ResponseBody String about() {
+        return String.format("Going to parse site = %s and parse word group counts.",
+                siteToParse);
+    }
 
-        return String.format("Going to parse site = %s spark counted %s word groups.",
-                siteToParse, wordGroupCount.get());
+    @RequestMapping(value = "/group-words", method = RequestMethod.POST)
+    public @ResponseBody WordCountObj groupWords(@RequestBody String inputToParse) {
+        return wordGroupCount.get(inputToParse);
     }
 }
