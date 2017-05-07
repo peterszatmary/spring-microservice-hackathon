@@ -13,5 +13,6 @@ Project about how to build microservices with spring ecosystem.
 
 ## TODO and NOTES
 - missing something like lagom:runAll for run all microservices at one
-- parser-microservice needs apache spark have to be downloaded manually and spark.home have to be set
+- parser-microservice needs apache spark have to be downloaded manually and spark.home have to be set.
+Download page : http://spark.apache.org/releases/spark-release-2-1-0.html
 
