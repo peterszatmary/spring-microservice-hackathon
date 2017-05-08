@@ -26,6 +26,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <module>configuration-server</module>
         <module>user-microservice</module>
         <module>parser-microservice</module>
+        <module>ui-microservice</module>
     </modules>
 
 
