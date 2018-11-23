@@ -1,3 +1,3 @@
-# user microservice
+# user microservice #
 
-simple microservice with any external communication. Communicates just at the beginning with configuration-server microservice to obtain configs.
+Simple microservice with any external communication. Communicates just at the beginning with configuration-server microservice to obtain configs.
