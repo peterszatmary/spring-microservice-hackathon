@@ -1,6 +1,4 @@
-# configuration  server microservice
+# Configuration  server microservice #
 
 holds all configs for all microservices in all spring profiles.
-All configs are stored here https://github.com/peterszatmary/spring-microservice-config-hackathon .
-
-
+All configs are stored here [https://github.com/peterszatmary/spring-microservice-config-hackathon](https://github.com/peterszatmary/spring-microservice-config-hackathon) .
