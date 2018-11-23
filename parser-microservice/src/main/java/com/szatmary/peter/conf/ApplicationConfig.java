@@ -15,9 +15,6 @@ import org.springframework.core.env.Environment;
 @Configuration
 public class ApplicationConfig {
 
-    @Autowired
-    private Environment env;
-
     @Value("${spring.application.name}")
     private String appName;
 
